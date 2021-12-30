@@ -52,21 +52,7 @@ function onButtonClick(event, items) {
   const filtered = items.filter(item => item[key] === value);
   console.log(filtered);
   displayItems(filtered);
-  // updateItems(items, key, value);
 }
-
-// function updateItems(items, key, value) {  
-//   items.forEach(item => {
-//     const li = item.querySelector("li") 
-//     if (item.dataset[key] === value) {
-//       console.log("add")
-//       li.classList.add("invisible");
-//     } else {      
-//       console.log("remove")
-//       li.classList.remove("invisible");
-//     }
-//   });
-// }
 
 function setEventListeners(items) {
   const logo = document.querySelector(".logo");
